@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Follow your heart</title>
+<html>
+<head>
+    <style>
+        body{
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .heart{
+            font-size: 130px;
+            color: #e00;
+            animation: beat .25s infinite alternate;
+            transform-origin: center;
+        }
+        @keyframes beat{
+            to {transform: scale(1.4);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="heart" onclick="window.location.href='message.html'">
+            ♡
+        </div>
+        <h1>
+            Follow the heartbeat
+        </h1>
+    </div>
+</body>
+</html>
